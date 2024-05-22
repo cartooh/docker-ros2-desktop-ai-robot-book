@@ -94,7 +94,7 @@ git clone -bv6.2 https://github.com/ultralytics/yolov5
 cd yolov5
 pip3 install -r requirements.txt
 cd ~/airobot_ws/src
-git clone https://github.com/JMU-ROBOTICS-VIVA/ros2_aruco
+git clone -b foxy https://github.com/JMU-ROBOTICS-VIVA/ros2_aruco
 git clone https://github.com/AI-Robot-Book/chapter5
 cd ~/airobot_ws
 colcon build $colcon_build_options
@@ -102,7 +102,7 @@ colcon build $colcon_build_options
 # 第6章
 sudo -E apt-get -y install ros-foxy-joint-state-publisher-gui
 cd ~/airobot_ws/src
-git clone https://github.com/rt-net/crane_plus
+git clone -b foxy-devel https://github.com/rt-net/crane_plus
 ### rosdep回避
 # rosdep install -r -y -i --from-paths .
 ### rosdepの代わりに依存パッケージの列挙
@@ -130,7 +130,7 @@ ign fuel download -v 4 -u https://fuel.ignitionrobotics.org/1.0/openrobotics/mod
 
 # 第7章
 cd ~/airobot_ws/src
-git clone https://github.com/jeffrey870517/executive_smach
+git clone -b ros2-foxy https://github.com/jeffrey870517/executive_smach
 git clone https://github.com/AI-Robot-Book/chapter7
 cd ~/airobot_ws
 colcon build $colcon_build_options
